@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="favicon" href="favicon.ico">
+	<link rel="stylesheet" href="styles.css">
+
+	<title>Clase 07'04</title>
+</head>
+<!-- 
+Objetivo
+Construir la estructura HTML y el diseño CSS de una tarjeta de perfil que contenga información personal, estadísticas y acciones. 
+Paso 1: Estructura HTML
+Crear un archivo index.html con la siguiente estructura:
+<main>: Contenedor principal de la tarjeta.
+<header>: Contiene la foto de perfil (div circular con un emoji) y el nombre del usuario.
+<section>: Contenedor de estadísticas con 3 bloques. Cada bloque tiene un número y un texto.
+<footer>: Contenedor con dos botones de acción.
+-->
+
+<body>
+	<main>
+		<header class="profile-header">
+			<div class="profile-card">
+				<div class="profile-info">
+					<div class="profile-picture">😎</div>
+					<h2>Estani Genoud</h2>
+				</div>
+				<section class="profile-stats">
+					<div class="stat-block">
+						<span class="stat-number">26</span>
+						<span class="stat-text">Edad</span>
+					</div>
+					<div class="stat-block">
+						<span class="stat-number">4</span>
+						<span class="stat-text">Lenguajes</span>
+					</div>
+					<div class="stat-block">
+						<span class="stat-number">1</span>
+						<span class="stat-text">Auto</span>
+					</div>
+				</section>
+			</div>
+			<footer class="profile-footer">
+				<button class="action-button">Contratar</button>
+				<button class="action-button">Mensaje</button>
+			</footer>
+		</header>
+	</main>
+</body>
+</html>

@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.profile-card {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 350px;
+	overflow: hidden;
+}
+.profile-header {
+	background-color: #010101a0;
+	border-radius: 10px;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+.profile-info{
+	display: flex;
+	background-color: #010101a0;
+	align-items: center;
+}
+.profile-info h2 {
+	margin-left: 1rem;
+}
+.profile-picture {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+} 
+.profile-stats {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+	background-color: #010101a0;
+	gap: 10px;
+
+}
+/*
+	Paso 2: Flexbox
+
+Una vez que tengan el HTML, deben aplicar CSS para cumplir estos requisitos:
+Iniciar el css con: 
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size : 62.5% } 
+Lograr que la tarjeta (<main>) quede exactamente en el centro de la pantalla (horizontal y vertical)
+La imagen y el nombre deben estar uno al lado del otro, alineados verticalmente al centro.
+Debe haber un espacio de 1rem entre la foto y el texto.
+Los tres bloques de estadísticas deben estar en una sola fila.
+El espacio sobrante debe distribuirse de forma que los tres bloques queden separados equitativamente.
+Cada bloque de estadística debe ser a su vez un contenedor Flexbox en modo columna para que el número quede arriba del texto.
+Los botones deben ocupar todo el ancho de la tarjeta, pero divididos al 50% cada uno. (usar flex-grow)
+Se debe configurar un hover para cada uno de los botones.
+
+*/
+.stat-block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.2rem;
+}
+.profile-footer{
+	padding: 20px;
+	display: flex;
+	gap: 10px;
+}
+.action-button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	flex-grow: 1;
+
+}
+.action-button:hover {
+	background-color: #0056b3;
+}
