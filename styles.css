@@ -97,3 +97,23 @@ Se debe configurar un hover para cada uno de los botones.
 .action-button:hover {
 	background-color: #0056b3;
 }
+.dark-theme {
+	background-color: #333;
+	color: #fff;
+}
+.button-switch{
+	background-color: #555;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+.button-switch:hover {
+	background-color: #777;
+}
+.dark-theme .button-switch{
+	background-color: #991919;
+	color: #333;
+}

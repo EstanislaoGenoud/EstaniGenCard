@@ -24,6 +24,9 @@ Crear un archivo index.html con la siguiente estructura:
 	<main>
 		<header class="profile-header">
 			<div class="profile-card">
+				<div class="button-switch">
+					<button type="button">Switch tema</button>
+				</div>
 				<div class="profile-info">
 					<div class="profile-picture">😎</div>
 					<h2>Estani Genoud</h2>
@@ -49,5 +52,15 @@ Crear un archivo index.html con la siguiente estructura:
 			</footer>
 		</header>
 	</main>
+	<script>
+		const switchButton = document.querySelector('.button-switch button');
+		const main = document.querySelector('main');
+
+		switchButton.addEventListener('click', () => {
+			main.classList.toggle('dark-theme');
+
+		});
+	</script>
 </body>
+
 </html>
